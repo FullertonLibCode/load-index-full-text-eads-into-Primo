@@ -1,13 +1,13 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 
-<!-- Purpose: Getty Research Institute's Primo Normalization Rules for Loading EADs
+<!-- Purpose: CSU Fullerton Primo Normalization Rules for Loading EADs
 
 Program: rules.xml
 Author: Ryan Edwards
 Created: 2015/09/30
 
 Comments:
-Getty Research Institute's Primo Normalization Rules for Loading EADs.
+CSU Fullerton's Primo Normalization Rules for Loading EADs.
 You may be able to re-create or import these normalization rules into your Primo 
 Back Office server for your load pipe, using the Import Primo Configuration Tool, but you should do 
 so carefully and probably should open a case with ExLibris Support to help you 
@@ -348,7 +348,7 @@ xsi:noNamespaceSchemaLocation="/exlibris/primo/p4_1/ng/primo/home/profile/publis
 		<valueSource>control/recordid</valueSource>
 	</source>
 	<action>
-		<routine code="ConcatenateBefore">http://primo.getty.edu/GRI:</routine>
+		<routine code="ConcatenateBefore">https://csuf-primo.hosted.exlibrisgroup.com/GRI:</routine>
 		<targetFlag  flag="new"/>
 	</action>
 </rule>
@@ -508,7 +508,7 @@ xsi:noNamespaceSchemaLocation="/exlibris/primo/p4_1/ng/primo/home/profile/publis
 		<targetTag>scope</targetTag>
 	</target>
 	<source type="constant">
-		<valueSource>GETTY_EAD2</valueSource>
+		<valueSource>FULLERTON_EAD</valueSource>
 	</source>
 	<action>
 		<routine code="CopyAsIs"/>
